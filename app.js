@@ -2,9 +2,12 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const path = require("path");
+const expressLayouts = require("express-ejs-layouts");
+require("dotenv").config();
+const registerRoutes = require("./routes/register");
 
 // Connect to the database
-mongoose.connect("mongodb://localhost/secure-docs", {
+mongoose.connect(process.env.MONGO_DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -18,13 +21,17 @@ db.once("open", () => {
 // Set up the view engine
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+app.use(expressLayouts);
 
 // Set up the static files
 app.use(express.static(path.join(__dirname, "public")));
 
-// Set up the routes
-app.use("/", (req, res) => {
-  res.send("Hello World!");
+// Set up the register routes
+app.use(registerRoutes);
+
+// Set up the root route
+app.get("/", (req, res) => {
+  res.render("index.ejs", { title: "Safe Lock Library | 2023" });
 });
 
 // Start the server
