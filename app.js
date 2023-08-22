@@ -11,6 +11,7 @@ require("dotenv").config();
 const registerRoutes = require("./routes/register");
 const loginRoutes = require("./routes/login");
 const adminRoutes = require("./routes/admin");
+const viewDocumentRoute = require("./routes/viewDocument");
 const repositoryRoutes = require("./routes/repository");
 const uploadRoutes = require("./routes/upload");
 
@@ -62,6 +63,7 @@ app.use(loginRoutes);
 app.use(adminRoutes);
 app.use(repositoryRoutes);
 app.use(uploadRoutes);
+app.use(viewDocumentRoute);
 
 // Set up the root route
 app.get("/", (req, res) => {

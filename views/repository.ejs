@@ -32,7 +32,10 @@
             <%=document.uploadDate.toDateString()%>
           </p>
           <div class="d-flex justify-content-between">
-            <a href="#" class="btn btn-primary btn-sm"
+            <a
+              href="/view/<%= document._id %>"
+              target="_blank"
+              class="btn btn-primary btn-sm"
               ><i class="fas fa-eye"></i
             ></a>
             <a href="#" class="btn btn-success btn-sm"
