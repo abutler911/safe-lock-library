@@ -6,6 +6,8 @@
         <div class="alert alert-success"><%= success_msg %></div>
         <% } %> <% if (error_msg) { %>
         <div class="alert alert-danger"><%= error_msg %></div>
+        <% } %> <% if (logged_out) { %>
+        <div class="alert alert-success">You have logged out successfully.</div>
         <% } %>
 
         <h2 id="title" class="text-center mb-4">Login</h2>

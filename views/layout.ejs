@@ -59,7 +59,11 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container"></div>
+      <div class="container">
+        <% if (isAuthenticated) { %>
+        <a href="/logout" class="btn logout-btn">Logout</a>
+        <% } %>
+      </div>
     </header>
 
     <%- body %>
@@ -67,7 +71,14 @@
     <!-- Footer -->
     <footer class="footer-container py-3">
       <div class="container text-center">
-        <p class="mb-0">&copy; 2023 | Safe Lock Library</p>
+        <span class="text-muted"
+          >&copy; 2023 Safe Lock Library | Developed by
+          <a
+            href="https://github.com/abutler911/safe-lock-library"
+            target="_blank"
+            >Andrew Butler</a
+          ></span
+        >
       </div>
     </footer>
 

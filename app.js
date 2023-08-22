@@ -3,8 +3,10 @@ require("dotenv").config();
 
 // Import core dependencies
 const express = require("express");
+const PORT = process.env.PORT || 3000;
 const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
+const { attachAuthStatus } = require("./middleware/auth");
 
 // Database connection
 require("./config/db");
@@ -20,6 +22,7 @@ const adminRoutes = require("./routes/admin");
 const viewDocumentRoute = require("./routes/viewDocument");
 const repositoryRoutes = require("./routes/repository");
 const uploadRoutes = require("./routes/upload");
+const logoutRoute = require("./routes/logout");
 
 // Create Express app
 const app = express();
@@ -35,6 +38,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Apply middleware configurations
 require("./middleware/middleware")(app);
+app.use(attachAuthStatus);
 
 // Apply routes
 app.use(registerRoutes);
@@ -43,6 +47,7 @@ app.use(adminRoutes);
 app.use(repositoryRoutes);
 app.use(uploadRoutes);
 app.use(viewDocumentRoute);
+app.use(logoutRoute);
 
 // Define root route
 app.get("/", (req, res) => {
@@ -50,6 +55,6 @@ app.get("/", (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}...`);
 });

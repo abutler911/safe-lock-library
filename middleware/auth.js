@@ -1,4 +1,8 @@
-// middleware/auth.js
+function attachAuthStatus(req, res, next) {
+  res.locals.isAuthenticated = req.isAuthenticated();
+  next();
+}
+
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
@@ -10,4 +14,5 @@ function ensureAuthenticated(req, res, next) {
 
 module.exports = {
   ensureAuthenticated,
+  attachAuthStatus,
 };
