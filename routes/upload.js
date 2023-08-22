@@ -3,12 +3,16 @@ const router = express.Router();
 const { ensureAuthenticated } = require("../middleware/auth");
 const Document = require("../models/Document");
 const multer = require("multer");
+const sanitize = require("sanitize-filename");
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "uploads/");
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + "-" + file.originalname);
+    // Use the sanitized filename
+    const filename = sanitize(req.body.filename || file.originalname);
+    cb(null, Date.now() + "-" + filename);
   },
 });
 const upload = multer({ storage });
@@ -20,11 +24,13 @@ router.post(
   async (req, res) => {
     try {
       const userId = req.user._id;
+      // Sanitize the filename
+      const filename = sanitize(req.body.filename || req.file.originalname);
 
       // Get file details
       const documentDetails = {
         user: req.user._id,
-        name: req.file.originalname,
+        name: filename, // Use sanitized filename
         path: req.file.path,
         type: req.file.mimetype,
         size: req.file.size,
