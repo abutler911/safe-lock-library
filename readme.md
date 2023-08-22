@@ -74,11 +74,11 @@ Open your browser and navigate to `http://localhost:3000` to access the applicat
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome! For more details, please see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 
-Distributed under the MIT License. See LICENSE.md for more information.
+Distributed under the MIT License. See [LICENSE.md](./LICENSE.md) for more information.
 
 ## Contact
 
