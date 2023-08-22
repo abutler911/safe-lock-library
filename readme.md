@@ -65,5 +65,7 @@ SECRET_KEY=your-secret-key
 
 ```bash
  npm start
-The application should now be running at `http://localhost:3000`. Open this URL in your browser to access the Safe Lock Library.
+
 ```
+
+The application should now be running at `http://localhost:3000`. Open this URL in your browser to access the Safe Lock Library.
