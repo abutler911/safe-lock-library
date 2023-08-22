@@ -12,3 +12,34 @@
 {"level":"info","message":"abutler911 accessing and viewing document 64e4efb4b16bc78d4c1469b8","timestamp":"2023-08-22T18:27:28.759Z"}
 {"level":"info","message":"abutler911 accessing and viewing document 64e4efb4b16bc78d4c1469b8","timestamp":"2023-08-22T18:27:55.875Z"}
 {"level":"info","message":"abutler911 accessing and viewing document undefined","timestamp":"2023-08-22T18:28:29.699Z"}
+{"level":"info","message":"GET /login 200 3053 - 15.821 ms","timestamp":"2023-08-22T18:50:52.550Z"}
+{"level":"info","message":"GET /css/styles.css 304 - - 1.363 ms","timestamp":"2023-08-22T18:50:52.712Z"}
+{"level":"info","message":"GET /js/main.js 304 - - 0.833 ms","timestamp":"2023-08-22T18:50:52.740Z"}
+{"level":"info","message":"GET /imgs/background.avif 304 - - 0.378 ms","timestamp":"2023-08-22T18:50:52.874Z"}
+{"level":"info","message":"POST /login 302 66 - 161.665 ms","timestamp":"2023-08-22T18:51:12.597Z"}
+{"level":"info","message":"GET /repository 200 4823 - 165.796 ms","timestamp":"2023-08-22T18:51:12.771Z"}
+{"level":"info","message":"GET /css/styles.css 304 - - 0.763 ms","timestamp":"2023-08-22T18:51:12.851Z"}
+{"level":"info","message":"GET /js/main.js 304 - - 0.994 ms","timestamp":"2023-08-22T18:51:12.853Z"}
+{"level":"info","message":"GET /imgs/background.avif 304 - - 0.567 ms","timestamp":"2023-08-22T18:51:12.895Z"}
+{"level":"info","message":"GET /admin 304 - - 71.166 ms","timestamp":"2023-08-22T18:51:23.594Z"}
+{"level":"info","message":"GET /css/styles.css 304 - - 0.535 ms","timestamp":"2023-08-22T18:51:23.652Z"}
+{"level":"info","message":"GET /js/main.js 304 - - 0.645 ms","timestamp":"2023-08-22T18:51:23.680Z"}
+{"level":"info","message":"GET /imgs/background.avif 304 - - 0.596 ms","timestamp":"2023-08-22T18:51:23.725Z"}
+{"level":"info","message":"GET /repository 304 - - 144.519 ms","timestamp":"2023-08-22T18:51:31.094Z"}
+{"level":"info","message":"GET /css/styles.css 304 - - 0.828 ms","timestamp":"2023-08-22T18:51:31.181Z"}
+{"level":"info","message":"GET /js/main.js 304 - - 0.525 ms","timestamp":"2023-08-22T18:51:31.183Z"}
+{"level":"info","message":"GET /imgs/background.avif 304 - - 0.386 ms","timestamp":"2023-08-22T18:51:31.230Z"}
+{"level":"info","message":"GET /repository 302 56 - 4.885 ms","timestamp":"2023-08-22T19:05:46.266Z"}
+{"level":"info","message":"GET /login 200 3088 - 8.025 ms","timestamp":"2023-08-22T19:05:46.286Z"}
+{"level":"info","message":"POST /login 500 1570 - 1.509 ms","timestamp":"2023-08-22T19:05:51.993Z"}
+{"level":"info","message":"GET /login 200 3053 - 10.358 ms","timestamp":"2023-08-22T19:07:06.476Z"}
+{"level":"info","message":"POST /login 302 66 - 191.643 ms","timestamp":"2023-08-22T19:07:09.674Z"}
+{"level":"info","message":"GET /repository 200 4823 - 163.022 ms","timestamp":"2023-08-22T19:07:09.843Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e4efb4b16bc78d4c1469b8","timestamp":"2023-08-22T19:07:12.361Z"}
+{"level":"info","message":"GET /view/64e4efb4b16bc78d4c1469b8 304 - - 141.256 ms","timestamp":"2023-08-22T19:07:12.432Z"}
+{"level":"info","message":"GET /admin 304 - - 79.467 ms","timestamp":"2023-08-22T19:07:17.631Z"}
+{"level":"info","message":"GET /repository 304 - - 179.331 ms","timestamp":"2023-08-22T19:07:19.903Z"}
+{"level":"info","message":"GET /repository 302 56 - 4.938 ms","timestamp":"2023-08-22T19:10:40.423Z"}
+{"level":"info","message":"GET /login 200 3088 - 8.398 ms","timestamp":"2023-08-22T19:10:40.440Z"}
+{"level":"info","message":"POST /login 302 66 - 161.307 ms","timestamp":"2023-08-22T19:10:44.582Z"}
+{"level":"info","message":"GET /repository 200 4823 - 146.893 ms","timestamp":"2023-08-22T19:10:44.736Z"}
