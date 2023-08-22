@@ -68,4 +68,20 @@ SECRET_KEY=your-secret-key
 
 ```
 
-The application should now be running at `http://localhost:3000`. Open this URL in your browser to access the Safe Lock Library.
+## Usage
+
+Open your browser and navigate to `http://localhost:3000` to access the application.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## License
+
+Distributed under the MIT License. See LICENSE.md for more information.
+
+## Contact
+
+Andrew Butler - abutler911@gmail.com
+
+Project Link: https://github.com/abutler911/safe-lock-library
