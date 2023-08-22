@@ -39,22 +39,31 @@ Make sure you have the following installed:
    git clone https://github.com/abutler911/safe-lock-library.git
    ```
 
-3. Navigate to the Project Directory
-   ```bash
-   cd safe-lock-library
-   ```
-4. Install Dependencies
-   ```bash
-   npm install
-   ```
-5. Configure Environment Variables
-   Create a `.env` file in the root directory
-   Add the following environment variables, replacing the values with your actual configurations:
-   ```env
-   MONGO_DB_URI=your-mongodb-uri
-   SECRET_KEY=your-secret-key
-   ```
-6. Start the server
-   ```bash
-    npm start
+### Navigate to the Project Directory
+
+```bash
+cd safe-lock-library
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configure Environment Variables
+
+Create a `.env` file in the root directory
+Add the following environment variables, replacing the values with your actual configurations:
+
+```env
+MONGO_DB_URI=your-mongodb-uri
+SECRET_KEY=your-secret-key
+```
+
+### Start the server
+
+```bash
+ npm start
 The application should now be running at `http://localhost:3000`. Open this URL in your browser to access the Safe Lock Library.
+```
