@@ -1,7 +1,11 @@
 :root {
   --primary-green: rgb(108, 133, 108);
   --primary-yellow: #c6e070;
-  --light-blue: #7cd5d5;
+  --light-blue: ##acdbdf;
+  --purple: #9692af;
+  --blue: #69779b;
+  --light-green: #d7eaea;
+  --light-gray: rgb(233, 233, 233);
 }
 
 body {
@@ -26,14 +30,31 @@ body {
   font-weight: 500;
   line-height: 1.5;
   margin-top: 15px;
-  border-color: #c3e6cb;
+  border-color: #000;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   opacity: 1;
   transition: opacity 1s ease-in-out;
+  text-align: center;
 }
 
-.alert-success.fade-out {
+.alert-danger {
+  color: #000;
+  background-color: rgba(255, 28, 58, 0.7);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 15px;
+  border-color: #000;
+  padding: 10px;
+  border-radius: 7px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+}
+
+.alert-success.fade-out,
+.alert-danger.fade-out {
   opacity: 0;
 }
 
@@ -69,12 +90,62 @@ body {
   background-color: var(--primary-green);
   height: 70px;
 }
+
 #title {
   font-family: "Caveat", cursive;
   font-size: 3.5rem;
   font-weight: 500;
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--purple);
+}
+
+.col-6, .col-md-4 {
+  height: 250px;
+}
+
+.card-body {
+  flex: 1 0 auto;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.admin-btn {
+  font-size: 0.9rem;
+  padding: 5px;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-green);
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 7px;
+
 }
 
 .button-container {
@@ -102,6 +173,7 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 }
 
 .btn:hover {
@@ -111,7 +183,7 @@ body {
 }
 
 .form-control {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(207, 207, 207, 0.5);
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   color: #fff;
@@ -120,6 +192,24 @@ body {
   font-weight: 500;
   line-height: 1.5;
 }
+
+.upload-input {
+  background-color: var(--purple);
+  margin-bottom: 15px;
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.tagline {
+  color: var(--light-gray);
+}
+
 footer {
   background-color: var(--primary-green);
 }

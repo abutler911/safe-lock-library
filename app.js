@@ -5,9 +5,14 @@ const path = require("path");
 const session = require("express-session");
 const flash = require("connect-flash");
 const expressLayouts = require("express-ejs-layouts");
+const passport = require("passport");
+require("./config/passport-config")(passport);
 require("dotenv").config();
 const registerRoutes = require("./routes/register");
 const loginRoutes = require("./routes/login");
+const adminRoutes = require("./routes/admin");
+const repositoryRoutes = require("./routes/repository");
+const uploadRoutes = require("./routes/upload");
 
 // Connect to the database
 mongoose.connect(process.env.MONGO_DB_URI, {
@@ -39,18 +44,24 @@ app.use(
   })
 );
 
+app.use(passport.initialize());
+app.use(passport.session());
 // Configure flash
 app.use(flash());
 
 // Middleware to make flash messages available in all views
 app.use((req, res, next) => {
   res.locals.success_msg = req.flash("success_msg");
+  res.locals.error_msg = req.flash("error_msg");
   next();
 });
 
 // Set up the register routes
 app.use(registerRoutes);
 app.use(loginRoutes);
+app.use(adminRoutes);
+app.use(repositoryRoutes);
+app.use(uploadRoutes);
 
 // Set up the root route
 app.get("/", (req, res) => {

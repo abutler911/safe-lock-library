@@ -1,0 +1,81 @@
+<main class="main-content py-5">
+  <div class="container">
+    <h2 id="title" class="text-center mb-4">Document Repository</h2>
+    <div class="container">
+      <% if (success_msg) { %>
+      <div class="alert alert-success"><%= success_msg %></div>
+      <% } %>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search documents..."
+        />
+      </div>
+      <div class="col-md-6">
+        <!-- Filter options, such as dropdowns or checkboxes, can go here -->
+      </div>
+    </div>
+
+    <!-- Document List -->
+    <% console.log(documents) %> <% documents.forEach(document => { %>
+    <div class="col-md-6 col-lg-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title"><%=document.name %></h5>
+          <p class="card-text">
+            Type: <%=document.type%> | Size: <%=document.size%> | Date:
+            <%=document.uploadDate.toDateString()%>
+          </p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary btn-sm"
+              ><i class="fas fa-eye"></i
+            ></a>
+            <a href="#" class="btn btn-success btn-sm"
+              ><i class="fas fa-download"></i
+            ></a>
+            <a href="#" class="btn btn-danger btn-sm"
+              ><i class="fas fa-trash"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+
+    <!-- Upload Button -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div class="row mt-3">
+        <div class="col-md-12 text-center">
+          <input
+            class="upload-input"
+            type="file"
+            name="document"
+            accept=".pdf,.doc,.docx"
+            required
+          />
+
+          <button type="submit" class="btn">Upload New Document</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row mt-3">
+      <% if (isAdmin) { %>
+      <div class="col-md-12 text-center mb-2">
+        <a href="/admin" class="btn">Admin Dashboard</a>
+      </div>
+      <% } %>
+    </div>
+    <!-- Pagination (if needed) -->
+    <!-- ... -->
+
+    <p class="text-center mt-3 tagline">
+      Your <strong><u>Secure</u></strong> Document Repository
+    </p>
+  </div>
+</main>
