@@ -93,7 +93,7 @@ body {
 
 #title {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
@@ -134,7 +134,40 @@ body {
 
 }
 
-.admin-btn {
+.list-group {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.document-buttons a,
+.document-buttons button {
+  padding: 2px 5px;
+  margin: 0;
+  font-size: 0.7rem;
+  width: 100%;
+}
+
+.document-buttons form {
+  display: inline;
+}
+
+.document-title {
+  font-size: 0.9rem;
+
+}
+
+.document-details {
+  font-size: 0.6rem;
+}
+
+.admin-ctrl-btn {
   font-size: 0.9rem;
   padding: 5px;
   font-weight: 600;
@@ -176,12 +209,17 @@ body {
   width: 100%;
 }
 
-.logout-btn {
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn, .admin-btn {
   background-color: var(--purple);
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 7px;
   color: #000;
-  cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -190,10 +228,7 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  width: 35%;
-  height: 50px;
-  float: right;
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .btn:hover {
@@ -211,6 +246,7 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
+  width: 100%;
 }
 
 .upload-input {

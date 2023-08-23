@@ -3,6 +3,13 @@ function attachAuthStatus(req, res, next) {
   next();
 }
 
+const checkAdminStatus = (req, res, next) => {
+  // Assuming the user object is attached to req, and it has an isAdmin property
+  // You'll need to modify this to match your actual user object structure
+  res.locals.isAdmin = req.user && req.user.isAdmin;
+  next();
+};
+
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
@@ -15,4 +22,5 @@ function ensureAuthenticated(req, res, next) {
 module.exports = {
   ensureAuthenticated,
   attachAuthStatus,
+  checkAdminStatus,
 };

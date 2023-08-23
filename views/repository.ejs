@@ -19,38 +19,41 @@
     </div>
 
     <!-- Document List -->
-    <% console.log(documents) %> <% documents.forEach(document => { %>
-    <div class="col-md-6 col-lg-4">
-      <div class="card mb-4">
-        <div class="card-body">
-          <h5 class="card-title"><%=document.name %></h5>
-          <p class="card-text">
-            Type: <%=document.type%> | Size: <%=document.size%> | Date:
-            <%=document.uploadDate.toDateString()%>
-          </p>
-          <div class="d-flex justify-content-between">
-            <a
-              href="/view/<%= document._id %>"
-              target="_blank"
-              class="btn me-2 ms-1"
-              ><i class="fas fa-eye"></i
-            ></a>
-            <a href="#" class="btn me-2"><i class="fas fa-download"></i></a>
-            <form
-              action="/delete/<%= document._id %>"
-              method="post"
-              class="d-inline"
-            >
-              <input type="hidden" name="_method" value="DELETE" />
-              <button type="submit" class="btn me-2">
-                <i class="fas fa-trash"></i>
-              </button>
-            </form>
-          </div>
+
+    <div class="list-group mb-3">
+      <% documents.forEach(document => { %>
+      <div
+        class="list-group-item d-flex justify-content-between align-items-center mb-3"
+      >
+        <div>
+          <span class="document-title"
+            ><i class="fas fa-file-alt"></i>
+            <strong><%= document.name %></strong></span
+          ><br />
+          <span class="document-details"
+            >Type: <%= document.type %> | Size: <%= document.size %> | Date: <%=
+            document.uploadDate.toDateString() %></span
+          >
+        </div>
+        <div class="document-buttons">
+          <a href="/view/<%= document._id %>" target="_blank" class="btn mb-1"
+            ><i class="fas fa-eye"></i
+          ></a>
+          <a href="#" class="btn mb-1"><i class="fas fa-download"></i></a>
+          <form
+            action="/delete/<%= document._id %>"
+            method="post"
+            class="d-inline"
+          >
+            <input type="hidden" name="_method" value="DELETE" />
+            <button type="submit" class="btn">
+              <i class="fas fa-trash"></i>
+            </button>
+          </form>
         </div>
       </div>
+      <% }) %>
     </div>
-    <% }) %>
 
     <!-- Upload Button -->
     <form action="/upload" method="post" enctype="multipart/form-data">
@@ -78,14 +81,6 @@
         </div>
       </div>
     </form>
-
-    <div class="row mt-3">
-      <% if (isAdmin) { %>
-      <div class="col-md-12 text-center mb-2">
-        <a href="/admin" class="btn">Admin Dashboard</a>
-      </div>
-      <% } %>
-    </div>
 
     <p class="text-center mt-3 tagline">
       Your <strong><u>Secure</u></strong> Document Repository

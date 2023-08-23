@@ -60,9 +60,13 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <% if (isAuthenticated) { %>
-        <a href="/logout" class="btn logout-btn">Logout</a>
-        <% } %>
+        <div class="header-content">
+          <% if (isAdmin) { %>
+          <a href="/admin" class="btn admin-btn">Admin</a>
+          <% } %> <% if (isAuthenticated) { %>
+          <a href="/logout" class="btn logout-btn">Logout</a>
+          <% } %>
+        </div>
       </div>
     </header>
 

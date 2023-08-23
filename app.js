@@ -6,7 +6,7 @@ const express = require("express");
 const PORT = process.env.PORT || 3000;
 const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
-const { attachAuthStatus } = require("./middleware/auth");
+const { attachAuthStatus, checkAdminStatus } = require("./middleware/auth");
 const methodOverride = require("method-override");
 
 // Database connection
@@ -40,6 +40,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Apply middleware configurations
 require("./middleware/middleware")(app);
 app.use(attachAuthStatus);
+app.use(checkAdminStatus);
 app.use(methodOverride("_method"));
 
 // Apply routes
