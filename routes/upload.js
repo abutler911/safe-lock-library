@@ -4,13 +4,14 @@ const { ensureAuthenticated } = require("../middleware/auth");
 const Document = require("../models/Document");
 const multer = require("multer");
 const sanitize = require("sanitize-filename");
+const { encrypt, decrypt } = require("../middleware/encryption");
+const fs = require("fs");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "uploads/");
   },
   filename: (req, file, cb) => {
-    // Use the sanitized filename
     const filename = sanitize(req.body.filename || file.originalname);
     cb(null, Date.now() + "-" + filename);
   },
@@ -24,23 +25,27 @@ router.post(
   async (req, res) => {
     try {
       const userId = req.user._id;
-      // Sanitize the filename
       const filename = sanitize(req.body.filename || req.file.originalname);
 
-      // Get file details
+      const fileBuffer = fs.readFileSync(req.file.path);
+      const encryptedData = encrypt(fileBuffer);
+
+      const encryptedPath = req.file.path + ".enc";
+      fs.writeFileSync(encryptedPath, encryptedData);
+
       const documentDetails = {
         user: req.user._id,
-        name: filename, // Use sanitized filename
-        path: req.file.path,
+        name: filename,
+        path: encryptedPath,
         type: req.file.mimetype,
-        size: req.file.size,
+        size: encryptedData.length,
       };
 
-      // Create and save the document
       const document = new Document(documentDetails);
       await document.save();
 
-      // Redirect or send a response
+      fs.unlinkSync(req.file.path);
+
       req.flash("success_msg", "Document uploaded successfully!");
       res.redirect("/repository");
     } catch (err) {

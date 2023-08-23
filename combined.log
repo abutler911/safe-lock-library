@@ -244,3 +244,37 @@
 {"level":"info","message":"GET /admin 200 4858 - 73.245 ms","timestamp":"2023-08-23T15:48:54.004Z"}
 {"level":"info","message":"GET /logout 302 88 - 76.801 ms","timestamp":"2023-08-23T15:49:00.533Z"}
 {"level":"info","message":"GET /login?logged_out=true 200 4449 - 3.011 ms","timestamp":"2023-08-23T15:49:00.551Z"}
+{"level":"info","message":"GET /login?logged_out=true 200 4449 - 10.037 ms","timestamp":"2023-08-23T16:08:11.968Z"}
+{"level":"info","message":"POST /login 302 66 - 154.302 ms","timestamp":"2023-08-23T16:08:19.253Z"}
+{"level":"info","message":"GET /repository 200 7776 - 147.543 ms","timestamp":"2023-08-23T16:08:19.415Z"}
+{"level":"info","message":"POST /upload 500 47 - 100.412 ms","timestamp":"2023-08-23T16:08:37.320Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.828 ms","timestamp":"2023-08-23T16:09:53.524Z"}
+{"level":"info","message":"GET /login 200 4392 - 8.303 ms","timestamp":"2023-08-23T16:09:53.538Z"}
+{"level":"info","message":"POST /login 302 66 - 151.520 ms","timestamp":"2023-08-23T16:09:56.657Z"}
+{"level":"info","message":"GET /repository 200 7776 - 144.166 ms","timestamp":"2023-08-23T16:09:56.806Z"}
+{"level":"info","message":"POST /upload 302 66 - 199.433 ms","timestamp":"2023-08-23T16:10:09.431Z"}
+{"level":"info","message":"GET /repository 200 8844 - 160.305 ms","timestamp":"2023-08-23T16:10:09.600Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e62f6114e769c3b8d34070","timestamp":"2023-08-23T16:10:56.965Z"}
+{"level":"info","message":"GET /view/64e62f6114e769c3b8d34070 500 45 - 150.067 ms","timestamp":"2023-08-23T16:10:57.039Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.893 ms","timestamp":"2023-08-23T16:11:23.153Z"}
+{"level":"info","message":"GET /login 200 4392 - 9.374 ms","timestamp":"2023-08-23T16:11:23.170Z"}
+{"level":"info","message":"POST /login 302 66 - 170.779 ms","timestamp":"2023-08-23T16:11:27.807Z"}
+{"level":"info","message":"GET /repository 200 8844 - 155.273 ms","timestamp":"2023-08-23T16:11:27.969Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e62f6114e769c3b8d34070","timestamp":"2023-08-23T16:11:31.020Z"}
+{"level":"info","message":"GET /view/64e62f6114e769c3b8d34070 500 45 - 147.397 ms","timestamp":"2023-08-23T16:11:31.096Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.001 ms","timestamp":"2023-08-23T16:18:05.088Z"}
+{"level":"info","message":"GET /login 200 4392 - 8.636 ms","timestamp":"2023-08-23T16:18:05.108Z"}
+{"level":"info","message":"POST /login 302 66 - 152.939 ms","timestamp":"2023-08-23T16:18:09.159Z"}
+{"level":"info","message":"GET /repository 200 8844 - 159.414 ms","timestamp":"2023-08-23T16:18:09.328Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e62f6114e769c3b8d34070","timestamp":"2023-08-23T16:18:13.768Z"}
+{"level":"info","message":"GET /view/64e62f6114e769c3b8d34070 500 45 - 154.723 ms","timestamp":"2023-08-23T16:18:13.850Z"}
+{"level":"info","message":"GET /logout 302 88 - 78.117 ms","timestamp":"2023-08-23T16:18:49.944Z"}
+{"level":"info","message":"GET /login?logged_out=true 200 4449 - 2.363 ms","timestamp":"2023-08-23T16:18:49.955Z"}
+{"level":"info","message":"POST /login 302 66 - 134.840 ms","timestamp":"2023-08-23T16:18:53.223Z"}
+{"level":"info","message":"GET /repository 200 4562 - 139.108 ms","timestamp":"2023-08-23T16:18:53.368Z"}
+{"level":"info","message":"POST /upload 302 66 - 156.981 ms","timestamp":"2023-08-23T16:19:05.840Z"}
+{"level":"info","message":"GET /repository 200 5630 - 136.775 ms","timestamp":"2023-08-23T16:19:05.983Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e63179b454c366f9801ec7","timestamp":"2023-08-23T16:19:31.834Z"}
+{"level":"info","message":"GET /view/64e63179b454c366f9801ec7 200 37425 - 144.830 ms","timestamp":"2023-08-23T16:19:31.904Z"}
+{"level":"info","message":"GET /logout 302 88 - 68.966 ms","timestamp":"2023-08-23T16:19:49.675Z"}
+{"level":"info","message":"GET /login?logged_out=true 200 4449 - 2.156 ms","timestamp":"2023-08-23T16:19:49.687Z"}

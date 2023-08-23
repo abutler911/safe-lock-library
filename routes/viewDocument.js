@@ -5,6 +5,8 @@ const { ensureAuthenticated } = require("../middleware/auth");
 const Document = require("../models/Document");
 const path = require("path");
 const logger = require("../logs/logger");
+const { decrypt } = require("../middleware/encryption");
+const fs = require("fs");
 
 router.get("/view/:documentId", ensureAuthenticated, async (req, res) => {
   logger.info(
@@ -23,9 +25,17 @@ router.get("/view/:documentId", ensureAuthenticated, async (req, res) => {
         .status(403)
         .send("You do not have permission to view this document");
     }
+    const encryptedData = fs.readFileSync(
+      path.resolve(__dirname, "..", document.path)
+    );
+    const decryptedData = decrypt(encryptedData);
 
-    // Send the file
-    res.sendFile(path.resolve(__dirname, "..", document.path));
+    res.writeHead(200, {
+      "Content-Type": document.type,
+      "Content-Disposition": "attachment; filename=" + document.name,
+      "Content-Length": decryptedData.length,
+    });
+    res.end(decryptedData);
   } catch (err) {
     console.error(err);
     res.status(500).send("An error occurred while fetching the document");
