@@ -1,5 +1,5 @@
 :root {
-  --primary-green: rgb(108, 133, 108);
+  --primary-green: #7EAA92;
   --primary-yellow: #c6e070;
   --light-blue: ##acdbdf;
   --purple: #9692af;
@@ -59,7 +59,7 @@ body {
 }
 
 .main-content {
-  background-image: url("/imgs/background.avif");
+  background-image: url("/imgs/background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -82,9 +82,24 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
+
+@media (min-width: 992px) {
+
+  .main-content {
+    background-size: 40%;
+    background-repeat: no-repeat;
+  }
+
+  #login-btn, #register-btn {
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    /* Adjust padding as needed */
+  }
+}
+
 
 .header {
   background-color: var(--primary-green);
@@ -93,7 +108,7 @@ body {
 
 #title {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
@@ -207,6 +222,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header-content {
@@ -229,6 +245,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .btn:hover {
