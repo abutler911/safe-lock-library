@@ -3,3 +3,6 @@
 {"level":"error","message":"Error message"}
 {"level":"error","message":"Error message"}
 {"level":"error","message":"Error message"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"C:\\Users\\afbut\\Dropbox\\newSandbox\\safe-lock-library\\uploads\\1692807940657-encrypt.enc","syscall":"open","timestamp":"2023-08-24T04:07:55.164Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"C:\\Users\\afbut\\Dropbox\\newSandbox\\safe-lock-library\\uploads\\1692807940657-encrypt.enc","syscall":"open","timestamp":"2023-08-24T04:09:39.744Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"C:\\Users\\afbut\\Dropbox\\newSandbox\\safe-lock-library\\uploads\\1692807940657-encrypt.enc","syscall":"open","timestamp":"2023-08-24T04:10:34.328Z"}

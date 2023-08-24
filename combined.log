@@ -342,3 +342,52 @@
 {"level":"info","message":"GET /repository 200 7369 - 166.958 ms","timestamp":"2023-08-23T22:55:03.843Z"}
 {"level":"info","message":"GET /repository 200 7098 - 160.970 ms","timestamp":"2023-08-23T22:55:16.064Z"}
 {"level":"info","message":"GET /repository 304 - - 147.743 ms","timestamp":"2023-08-23T22:56:01.713Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.787 ms","timestamp":"2023-08-24T03:58:48.435Z"}
+{"level":"info","message":"GET /login 200 4392 - 11.011 ms","timestamp":"2023-08-24T03:58:48.451Z"}
+{"level":"info","message":"POST /login 302 66 - 159.225 ms","timestamp":"2023-08-24T03:58:58.974Z"}
+{"level":"info","message":"GET /repository 200 7098 - 159.554 ms","timestamp":"2023-08-24T03:58:59.139Z"}
+{"level":"info","message":"GET /admin 304 - - 68.979 ms","timestamp":"2023-08-24T03:59:02.272Z"}
+{"level":"info","message":"GET /admin 200 4856 - 71.802 ms","timestamp":"2023-08-24T03:59:57.358Z"}
+{"level":"info","message":"GET /admin 200 4709 - 1.836 ms","timestamp":"2023-08-24T04:00:06.582Z"}
+{"level":"info","message":"GET /admin 304 - - 76.217 ms","timestamp":"2023-08-24T04:00:36.919Z"}
+{"level":"info","message":"GET /admin 304 - - 76.418 ms","timestamp":"2023-08-24T04:00:53.009Z"}
+{"level":"info","message":"GET /admin 304 - - 76.556 ms","timestamp":"2023-08-24T04:01:01.454Z"}
+{"level":"info","message":"GET /admin 304 - - 80.074 ms","timestamp":"2023-08-24T04:01:37.355Z"}
+{"level":"info","message":"GET /admin 304 - - 78.639 ms","timestamp":"2023-08-24T04:01:48.111Z"}
+{"level":"info","message":"GET /admin 304 - - 78.486 ms","timestamp":"2023-08-24T04:02:09.539Z"}
+{"level":"info","message":"GET /admin 304 - - 71.623 ms","timestamp":"2023-08-24T04:02:59.232Z"}
+{"level":"info","message":"GET /admin 200 5087 - 73.489 ms","timestamp":"2023-08-24T04:03:52.826Z"}
+{"level":"info","message":"GET /admin 200 5046 - 72.872 ms","timestamp":"2023-08-24T04:04:06.021Z"}
+{"level":"info","message":"GET /admin 200 5213 - 88.786 ms","timestamp":"2023-08-24T04:04:45.551Z"}
+{"level":"info","message":"GET /admin 304 - - 77.501 ms","timestamp":"2023-08-24T04:05:19.043Z"}
+{"level":"info","message":"GET /logout 302 88 - 71.075 ms","timestamp":"2023-08-24T04:05:41.976Z"}
+{"level":"info","message":"GET /login?logged_out=true 200 4449 - 2.440 ms","timestamp":"2023-08-24T04:05:41.992Z"}
+{"level":"info","message":"POST /login 302 66 - 145.229 ms","timestamp":"2023-08-24T04:05:51.371Z"}
+{"level":"info","message":"GET /repository 200 7098 - 140.840 ms","timestamp":"2023-08-24T04:05:51.517Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e633043d8807c90a992880","timestamp":"2023-08-24T04:05:57.520Z"}
+{"level":"info","message":"GET /view/64e633043d8807c90a992880 500 45 - 144.707 ms","timestamp":"2023-08-24T04:05:57.594Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.412 ms","timestamp":"2023-08-24T04:07:43.519Z"}
+{"level":"info","message":"GET /login 200 4392 - 7.704 ms","timestamp":"2023-08-24T04:07:43.531Z"}
+{"level":"info","message":"POST /login 302 66 - 179.155 ms","timestamp":"2023-08-24T04:07:49.760Z"}
+{"level":"info","message":"GET /repository 200 7098 - 173.872 ms","timestamp":"2023-08-24T04:07:49.944Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e633043d8807c90a992880","timestamp":"2023-08-24T04:07:55.092Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"C:\\Users\\afbut\\Dropbox\\newSandbox\\safe-lock-library\\uploads\\1692807940657-encrypt.enc","syscall":"open","timestamp":"2023-08-24T04:07:55.164Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.365 ms","timestamp":"2023-08-24T04:09:32.877Z"}
+{"level":"info","message":"GET /login 200 4392 - 7.952 ms","timestamp":"2023-08-24T04:09:32.890Z"}
+{"level":"info","message":"POST /login 302 66 - 193.937 ms","timestamp":"2023-08-24T04:09:36.359Z"}
+{"level":"info","message":"GET /repository 200 7098 - 142.329 ms","timestamp":"2023-08-24T04:09:36.509Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e633043d8807c90a992880","timestamp":"2023-08-24T04:09:39.673Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"C:\\Users\\afbut\\Dropbox\\newSandbox\\safe-lock-library\\uploads\\1692807940657-encrypt.enc","syscall":"open","timestamp":"2023-08-24T04:09:39.744Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.234 ms","timestamp":"2023-08-24T04:10:27.238Z"}
+{"level":"info","message":"GET /login 200 4392 - 7.893 ms","timestamp":"2023-08-24T04:10:27.256Z"}
+{"level":"info","message":"POST /login 302 66 - 145.975 ms","timestamp":"2023-08-24T04:10:30.285Z"}
+{"level":"info","message":"GET /repository 200 7098 - 147.202 ms","timestamp":"2023-08-24T04:10:30.437Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e633043d8807c90a992880","timestamp":"2023-08-24T04:10:34.260Z"}
+{"code":"ENOENT","errno":-4058,"level":"error","path":"C:\\Users\\afbut\\Dropbox\\newSandbox\\safe-lock-library\\uploads\\1692807940657-encrypt.enc","syscall":"open","timestamp":"2023-08-24T04:10:34.328Z"}
+{"level":"info","message":"GET /view/64e633043d8807c90a992880 500 1452 - 141.687 ms","timestamp":"2023-08-24T04:10:34.333Z"}
+{"level":"info","message":"GET /repository 302 56 - 5.047 ms","timestamp":"2023-08-24T04:12:13.707Z"}
+{"level":"info","message":"GET /login 200 4392 - 9.027 ms","timestamp":"2023-08-24T04:12:13.721Z"}
+{"level":"info","message":"POST /login 302 66 - 157.863 ms","timestamp":"2023-08-24T04:12:16.635Z"}
+{"level":"info","message":"GET /repository 200 7098 - 145.188 ms","timestamp":"2023-08-24T04:12:16.786Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e633043d8807c90a992880","timestamp":"2023-08-24T04:12:20.302Z"}
+{"level":"info","message":"GET /view/64e633043d8807c90a992880 500 1452 - 149.063 ms","timestamp":"2023-08-24T04:12:20.384Z"}

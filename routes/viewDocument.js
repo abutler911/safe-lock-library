@@ -8,7 +8,7 @@ const logger = require("../logs/logger");
 const { decrypt } = require("../middleware/encryption");
 const fs = require("fs");
 
-router.get("/view/:documentId", ensureAuthenticated, async (req, res) => {
+router.get("/view/:documentId", ensureAuthenticated, async (req, res, next) => {
   logger.info(
     `${req.user.username} accessing and viewing document ${req.params.documentId}`
   );
@@ -38,7 +38,8 @@ router.get("/view/:documentId", ensureAuthenticated, async (req, res) => {
     res.end(decryptedData);
   } catch (err) {
     console.error(err);
-    res.status(500).send("An error occurred while fetching the document");
+    return next(err);
+    // res.status(500).send("An error occurred while fetching the document");
   }
 });
 

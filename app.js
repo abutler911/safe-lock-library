@@ -57,6 +57,16 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { title: "Safe Lock Library | 2023" });
 });
 
+// Error-handling middleware
+app.use((err, req, res, next) => {
+  logger.error(err.stack);
+
+  res.status(err.status || 500).render("error", {
+    message: err.message || "An unexpected error occurred!",
+    error: process.env.NODE_ENV === "development" ? err : {},
+  });
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}...`);

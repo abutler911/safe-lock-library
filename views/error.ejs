@@ -1,0 +1,22 @@
+<main class="main-content py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 text-dark">
+        <h2 id="title" class="text-center mb-4">
+          Uh Oh, Something Went Wrong...
+        </h2>
+        <p><%= message %></p>
+        <% if (error.stack) { %>
+        <pre><%= error.stack %></pre>
+        <% } %>
+        <p class="text-center mt-3 tagline">
+          Your
+          <span
+            ><strong><u>Secure</u></strong></span
+          >
+          Document Repository
+        </p>
+      </div>
+    </div>
+  </div>
+</main>

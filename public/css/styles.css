@@ -96,7 +96,6 @@ body {
   #login-btn, #register-btn {
     width: auto;
     padding: 0.75rem 1.5rem;
-    /* Adjust padding as needed */
   }
 }
 
@@ -120,11 +119,18 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--purple);
+  opacity: 0.8;
+  color: #fff;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
 }
 
 .col-6, .col-md-4 {
   height: 250px;
 }
+
 
 .card-body {
   flex: 1 0 auto;
@@ -193,6 +199,8 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 
 }
 
