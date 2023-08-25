@@ -391,3 +391,30 @@
 {"level":"info","message":"GET /repository 200 7098 - 145.188 ms","timestamp":"2023-08-24T04:12:16.786Z"}
 {"level":"info","message":"abutler911 accessing and viewing document 64e633043d8807c90a992880","timestamp":"2023-08-24T04:12:20.302Z"}
 {"level":"info","message":"GET /view/64e633043d8807c90a992880 500 1452 - 149.063 ms","timestamp":"2023-08-24T04:12:20.384Z"}
+{"level":"info","message":"GET / 200 3577 - 24.938 ms","timestamp":"2023-08-24T17:50:51.544Z"}
+{"level":"info","message":"GET /login 200 4357 - 3.259 ms","timestamp":"2023-08-24T17:50:56.370Z"}
+{"level":"info","message":"POST /login 302 66 - 228.464 ms","timestamp":"2023-08-24T17:51:00.768Z"}
+{"level":"info","message":"GET /repository 200 8236 - 423.284 ms","timestamp":"2023-08-24T17:51:01.198Z"}
+{"level":"info","message":"abutler911 accessing and viewing document 64e77d86903b8d6b4a4ae816","timestamp":"2023-08-24T17:51:04.204Z"}
+{"level":"info","message":"GET /view/64e77d86903b8d6b4a4ae816 500 1452 - 432.734 ms","timestamp":"2023-08-24T17:51:04.480Z"}
+{"level":"info","message":"GET /repository 304 - - 276.221 ms","timestamp":"2023-08-24T17:59:09.100Z"}
+{"level":"info","message":"GET /logout 302 88 - 167.186 ms","timestamp":"2023-08-24T17:59:13.640Z"}
+{"level":"info","message":"GET /login?logged_out=true 200 4449 - 2.695 ms","timestamp":"2023-08-24T17:59:13.648Z"}
+{"level":"info","message":"POST /login 302 66 - 193.849 ms","timestamp":"2023-08-24T17:59:20.363Z"}
+{"level":"info","message":"GET /repository 200 8236 - 315.661 ms","timestamp":"2023-08-24T17:59:20.684Z"}
+{"level":"info","message":"GET /admin 200 5213 - 150.275 ms","timestamp":"2023-08-24T17:59:22.672Z"}
+{"level":"info","message":"GET / 200 3577 - 3.550 ms","timestamp":"2023-08-24T18:04:43.403Z"}
+{"level":"info","message":"GET / 200 3577 - 1.506 ms","timestamp":"2023-08-24T18:04:51.592Z"}
+{"level":"info","message":"GET / 304 - - 32.361 ms","timestamp":"2023-08-25T06:04:42.795Z"}
+{"level":"info","message":"GET /login 200 4357 - 7.874 ms","timestamp":"2023-08-25T06:04:46.196Z"}
+{"level":"info","message":"GET / 200 3633 - 2.063 ms","timestamp":"2023-08-25T06:08:22.619Z"}
+{"level":"info","message":"GET / 304 - - 1.761 ms","timestamp":"2023-08-25T06:10:13.708Z"}
+{"level":"info","message":"GET / 304 - - 5.181 ms","timestamp":"2023-08-25T06:10:29.818Z"}
+{"level":"info","message":"GET / 304 - - 4.229 ms","timestamp":"2023-08-25T06:14:38.681Z"}
+{"level":"info","message":"GET / 304 - - 3.883 ms","timestamp":"2023-08-25T06:14:49.962Z"}
+{"level":"info","message":"GET / 304 - - 4.000 ms","timestamp":"2023-08-25T06:14:51.298Z"}
+{"level":"info","message":"GET / 304 - - 4.637 ms","timestamp":"2023-08-25T06:14:53.533Z"}
+{"level":"info","message":"GET / 304 - - 2.579 ms","timestamp":"2023-08-25T06:16:57.066Z"}
+{"level":"info","message":"GET / 200 3633 - 1.709 ms","timestamp":"2023-08-25T06:19:37.743Z"}
+{"level":"info","message":"GET / 200 3725 - 1.457 ms","timestamp":"2023-08-25T06:21:25.296Z"}
+{"level":"info","message":"GET / 200 3727 - 1.229 ms","timestamp":"2023-08-25T06:21:53.099Z"}
