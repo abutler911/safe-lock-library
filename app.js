@@ -9,6 +9,15 @@ const expressLayouts = require("express-ejs-layouts");
 const { attachAuthStatus, checkAdminStatus } = require("./middleware/auth");
 const methodOverride = require("method-override");
 
+//AWS Config
+const AWS = require("aws-sdk");
+
+AWS.config.update({
+  region: process.env.AWS_REGION,
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+});
+
 // Database connection
 require("./config/db");
 
